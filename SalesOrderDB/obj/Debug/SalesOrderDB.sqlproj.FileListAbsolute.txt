@@ -1,0 +1,5 @@
+D:\VSProjects\SalesOrderDB\bin\Debug\SalesOrderDB.dacpac
+D:\VSProjects\SalesOrderDB\bin\Debug\SalesOrderDB.dll
+D:\VSProjects\SalesOrderDB\bin\Debug\SalesOrderDB.pdb
+D:\VSProjects\SalesOrderDB\obj\Debug\SalesOrderDB.dll
+D:\VSProjects\SalesOrderDB\obj\Debug\SalesOrderDB.pdb

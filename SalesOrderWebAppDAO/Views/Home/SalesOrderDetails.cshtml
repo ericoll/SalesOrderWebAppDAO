@@ -1,0 +1,36 @@
+﻿@model SalesOrderWebAppDAO.Models.SalesOrderModel
+
+<div>
+    <h4>Detail Sales Order </h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Id)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Id)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Customer)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Customer)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Product)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Product)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+    </dl>
+</div>
+<div>
+    @*@Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |*@
+    <a asp-action="AllSalesOrders"> << Back</a>
+</div>

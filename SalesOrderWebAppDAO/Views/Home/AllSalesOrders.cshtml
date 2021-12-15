@@ -1,0 +1,50 @@
+﻿@model IEnumerable<SalesOrderWebAppDAO.Models.SalesOrderModel>
+
+<p>
+    <a asp-action="SalesOrder">New Sale</a>
+</p>
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Customer)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Product)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th>
+                Action
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Customer)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Product)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @* @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |*@
+                @Html.ActionLink("Details", "SalesOrderDetails", new { id=item.Id })
+                @* | *@
+                @*@Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })*@
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
